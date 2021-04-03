@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import FM from "../client";
+import FM from "../api/client";
 import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
 

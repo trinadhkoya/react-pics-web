@@ -10,7 +10,7 @@ import ImageCard from "./ImageCard";
 function ImageList(props) {
     let images = []
     images = props.images.map((img) => {
-        return <ImageCard key={img.id}   src={img.urls.regular} alt={img.description}/>
+        return <ImageCard key={img.id} src={img.urls.regular} alt={img.description}/>
     })
     return (
         <div className='img-list'>
