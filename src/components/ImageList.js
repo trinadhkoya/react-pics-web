@@ -1,4 +1,5 @@
 import './ImageList.css'
+import ImageCard from "./ImageCard";
 
 /**
  *
@@ -8,11 +9,11 @@ import './ImageList.css'
  */
 function ImageList(props) {
     let images = []
-    images = props.images.map((img,index) => {
-        return <img key={index.toString()} className='search-img' src={img.urls.small} alt={''}/>
+    images = props.images.map((img) => {
+        return <ImageCard key={img.id}   src={img.urls.regular} alt={img.description}/>
     })
     return (
-        <div>
+        <div className='img-list'>
             {images}
         </div>
     )
